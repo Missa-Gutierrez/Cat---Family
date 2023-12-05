@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="css/estilo2.css">
+    <link rel="shortcut icon" href="css/form.svg">
+</head>
+<body>
+    
+    <header>
+        <a href="Login.html"><img class="regresar" src="css/regresar.svg" alt="Botón"></a>
+        <nav>
+            <h1 class="texto">Registrate gratis con un usuario y contraseña.</h1>
+        </nav>
+    </header>
+    
+    <section class="form-register">
+    <form action="php/registrar.php" method="post">
+        <h4>Registrate:</h4>
+        <input class="controls" type="text" name="login" id="login" placeholder="Escribe tu nombre de usuario..." maxlength="20">
+        <input class="controls" type="password" name="password" id="password" placeholder="Escribe tu contraseña..." maxlength="20">
+        <input class="botons" type="submit" name="enviar" value="Registrarse">
+    </form>
+</section>
+
+</body>
+</html>

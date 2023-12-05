@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Formulario/Estilos/estilo.css">
+    <link rel="shortcut icon" href="css/form.svg">
+</head>
+<body>
+    
+    <header>
+        <a href="../../Cat-&-Family.html"><img class="regresar" src="css/regresar.svg" alt="Botón"></a>
+        <nav>
+            <h1 class="texto">¿Quieres adoptar un gato? completa el siguiente formulario de adopción.</h1>
+        </nav>
+    </header>
+
+    <section class="form-register">
+        <form action="Formulario/registro.php" method="post" onsubmit="enviar()">
+        <h4>Formulario de Adopcion</h4>
+        <input class="controls" type="search" name="CURP" id="CURP" placeholder="Ingrese su CURP(18 dígitos)..." maxlength="18" oninput="validarInput(this)" onkeyup="mayus(this);" required><pre id="resultado"></pre>
+        <input class="controls" type="search" name="nombre" id="nombre" placeholder="Ingrese su Nombre..." required>
+        <input class="controls" type="search" name="direccion" id="direccion" placeholder="Ingrese su Domicilio..." required>
+        <input class="controls" type="date" name="fecha_adopcion" id="fecha_adopcion" placeholder="Ingrese la fecha de Adopcion..." required>
+        <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Ingrese su numero telefonico..." maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" pattern="[0-9]{10}" required>
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo..." required>
+        <input class="botons" type="submit" value="Adoptar">
+    </form>
+    </section>
+    <script src="Formulario/Estilos/main.js"></script>
+</body>
+</html>

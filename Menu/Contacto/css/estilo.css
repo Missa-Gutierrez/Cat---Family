@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(193, 234, 250);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(128, 128, 128);
+    border-radius: 50px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: rgb(94, 93, 93);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: rgb(1, 0, 82);
+    align-items: center;
+    padding: 30px;
+}
+.regresar{
+    display: flex;
+    height: 40px;
+    margin-right: 10px;
+}
+.texto{
+    font-size: 20px;
+    color: #fff;
+}
+img.cecytea{
+    display: block;
+    height: 100px;
+    margin: auto;
+    margin-top: 20px;
+}
+h1{
+    color: rgb(105, 105, 105);
+    text-align: center;
+    font-size: 100px;
+}
+p.a{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt{
+    margin-left: 50px;
+}
+
+.imagen{
+    height: 400px;
+    border-radius: 5%;
+    margin-top: 30px;
+}

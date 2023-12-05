@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="css/form.svg">
+</head>
+<body>
+
+    <header>
+        <a href="../../Cat-&-Family.html"><img class="regresar" src="css/regresar.svg" alt="Botón"></a>
+        <nav>
+            <h1 class="texto">Para continuar ingresa tu usuario y contraseña.</h1>
+        </nav>
+    </header>
+    
+    <section class="form-register">
+    <form action="php/comprueba_login.php" method="post">
+        <h4>Introduce tus datos:</h4>
+        <input class="controls" type="text" name="login" id="login" placeholder="Ingresa tu usuario..." maxlength="20">
+        <input class="controls" type="password" name="password" id="password" placeholder="Ingresa tu contraseña..." maxlength="20">
+        <p>¿No tienes usuario? <a href="Registrarse.html">Registrate gratis</a></p>
+        <input class="botons" type="submit" name="enviar" value="Entrar">
+    </form>
+</section>
+</body>
+</html>
